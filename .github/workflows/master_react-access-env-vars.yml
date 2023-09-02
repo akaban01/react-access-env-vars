@@ -27,7 +27,6 @@ jobs:
           npm run build --if-present
           npm run test --if-present
 
-
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
@@ -53,5 +52,5 @@ jobs:
         with:
           app-name: 'react-access-env-vars'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_75E632342F334951836B18F28C065FB5 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_834BC9B310F7404BB114BD3341ECC013 }}
           package: .
